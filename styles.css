@@ -172,7 +172,7 @@ HEADER
 
 
 header {
-    height: calc(100vh - 80px); 
+     min-height: calc(100vh - 80px); 
     } 
 
 
@@ -255,7 +255,6 @@ header {
     */
 
     #highlights {
-        padding-top: 300px;
         position: relative;
         max-width: 100vw;
        
@@ -441,11 +440,11 @@ header {
         padding: 0 8px;
     }
 
-    /*SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
+   /*SMALL PHONES, TABLETS, LARGE SMARTPHONES*/
 
-    @media (max-width: 768px) {
-        .header__description {
-            padding: 0 24;
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
     }
 
     h1 {
@@ -453,15 +452,63 @@ header {
     }
 
     h2 {
-       font-size: 26px; 
+        font-size: 26px;
     }
 
     button {
-      font-size: 18px;  
+        font-size: 18px;
     }
 
     .book {
-       width: 50%; 
+        width: 50%;
+    }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES*/
+
+@media (max-width: 550px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
+    }
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES*/
+
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+}
+    
+    h1 {
+        font-size; 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
     }
 
     /* SMALL PHONES, LARGE SMARTPHONES*/
@@ -469,16 +516,14 @@ header {
     @media (max-width: 550px) {
         .btn__menu {
             display: block;
-        }
-    
+    }
 
     .nav__links {
         display: none;
     }
 
     .highlight {
-       width: 100%;
-       margin-bottom: 24px; 
+        width: 100%;
     }
 
     .highlight:not(:last-child) {
@@ -486,6 +531,3 @@ header {
     }
 
     }
-
-}
-
